@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: reveal 0.8s ease-out forwards;
+    }
+    @keyframes reveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in:nth-child(1) { animation-delay: 0.1s; }
+    .fade-in:nth-child(2) { animation-delay: 0.25s; }
+    .fade-in:nth-child(3) { animation-delay: 0.4s; }
+    .fade-in:nth-child(4) { animation-delay: 0.55s; }
+  </style>
+</head>
+<body>
+  <header class="fade-in">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="fade-in" id="about">
+    <h2>À propos</h2>
+    <p>Je m'appele DOUBOGAN Junior. Je suis en 1ère IMI. J'aime l'Informatique. Je suis un développeur passionné par le web
+    et la création d’expériences simples et élégantes.Je vie à Ouéga Topka, dans la von de Code Pin. Je suis amie avec beaucoup de monde.</p>
+  </section>
+
+  <section class="fade-in" id="projects">
+    <h2>Mes Projets</h2>
+    <div class="card">Devenir un grand espère en cybersécurité </div>
+    <div class="card">Créer une grande école de programmation pour les jeunes passionnés</div>
+    <div class="card">Avoir mon  DT IMI avec mention très bien</div>
+    <div class="card">créer des applications et jeux fantastiques</div>
+  </section>
+
+  <section class="fade-in" id="contact">
+    <h2>Contact</h2>
+    <p>Envoyez-moi un message à <a href="OZZYBOY@GMAIL.COM">OZZYBOY@GMAIL.COM</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Mon Portfolio</p>
+  </footer>
+</body>
+</html>
